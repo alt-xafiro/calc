@@ -1,0 +1,54 @@
+@use "sass:color";
+
+// Пути
+
+$fonts: "../fonts";
+
+// Брейкпоинты
+
+$min-page-width: 360px;
+$page-padding: 20px;
+
+$calc-max-width: 380px;
+
+// Анимация
+
+$transition-duration: 0.15s;
+
+// Цвета
+
+$color-black: #000000;
+$color-white: #ffffff;
+
+$text-color: #d6d6d6;
+$text-disabled-color: color.adjust($text-color, $lightness: -25%);
+
+$text-about-color: #666666;
+$text-about-link-hover-color: color.adjust($text-about-color, $lightness: 5%);
+$text-about-link-active-color: color.adjust($text-about-color, $lightness: 10%);
+
+$background-color: #3b3b3b;
+
+$foreground-color: #575757;
+$foreground-hover-color: color.adjust($foreground-color, $lightness: 5%);
+$foreground-active-color: color.adjust($foreground-color, $lightness: 10%);
+$foreground-disabled-color: color.adjust($foreground-color, $lightness: -7%);
+
+$input-button-color: color.adjust($foreground-color, $lightness: 5%);
+$input-button-hover-color: color.adjust($input-button-color, $lightness: 5%);
+$input-button-active-color: color.adjust($input-button-color, $lightness: 10%);
+$input-button-disabled-color: color.adjust(
+  $input-button-color,
+  $lightness: -7%
+);
+
+$equals-button-color: color.adjust($foreground-color, $lightness: -4%);
+$equals-button-hover-color: color.adjust($equals-button-color, $lightness: 5%);
+$equals-button-active-color: color.adjust(
+  $equals-button-color,
+  $lightness: 10%
+);
+$equals-button-disabled-color: color.adjust(
+  $equals-button-color,
+  $lightness: -2%
+);

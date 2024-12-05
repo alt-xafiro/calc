@@ -1,0 +1,20 @@
+.input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 0 15px;
+
+  background-color: $foreground-color;
+}
+
+.input__field {
+  width: 100%;
+  overflow-y: hidden;
+  overflow-x: auto;
+  padding: 8px 0;
+
+  font-size: 32px;
+  text-align: right;
+  text-transform: uppercase;
+}

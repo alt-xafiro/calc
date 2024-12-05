@@ -1,0 +1,82 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  border: none;
+  overflow: auto;
+
+  font-family: inherit;
+  font-size: 22px;
+  line-height: 1;
+  font-weight: 700;
+  color: $text-color;
+
+  background-color: $foreground-color;
+  transition-duration: $transition-duration;
+  transition-property: background-color, color;
+
+  &:hover {
+    background-color: $foreground-hover-color;
+  }
+
+  &:active {
+    background-color: $foreground-active-color;
+  }
+
+  &:focus {
+    // tabindex="-1", так что кнопки в любом случае не ловят фокус,
+    // но иногда происходит ложное срабатывание, поэтому отключаю явно
+    outline: none;
+  }
+
+  &:disabled {
+    color: $text-disabled-color;
+
+    background-color: $foreground-disabled-color;
+  }
+}
+
+.button--digit,
+.button--opposite,
+.button--decimal-separator {
+  background-color: $input-button-color;
+
+  &:hover {
+    background-color: $input-button-hover-color;
+  }
+
+  &:active {
+    background-color: $input-button-active-color;
+  }
+
+  &:disabled {
+    background-color: $input-button-disabled-color;
+  }
+}
+
+.button--equals {
+  background-color: $equals-button-color;
+
+  &:hover {
+    background-color: $equals-button-hover-color;
+  }
+
+  &:active {
+    background-color: $equals-button-active-color;
+  }
+
+  &:disabled {
+    background-color: $equals-button-disabled-color;
+  }
+}
+
+.button > * {
+  pointer-events: none;
+}
+
+.button__sup {
+  margin-bottom: 1em;
+
+  font-size: 0.55em;
+}
